@@ -1,0 +1,93 @@
+export default function Contact() {
+  return (
+    <main className="contact-page">
+      <section className="contact">
+        <div className="container">
+          <h1>Contact</h1>
+          <div className="contact-layout">
+            <div className="contact-info">
+              <h2>JW Sport management</h2>
+            </div>
+          </div>
+
+          <div className="contact-main-layout">
+            <div className="image-cards-sidebar">
+              <div className="director-card">
+                <div className="director-media">
+                  <img
+                    src="/jwdirector.jpg"
+                    alt="JW Sport Management Director"
+                  />
+                </div>
+                <div className="card-content">
+                  <h3>Robert Hafredal</h3>
+                  <p>Chief Executive Officer</p>
+                  <p>
+                    <a href="tel:+46406118688">+46 406 118 688</a>
+                  </p>
+                  <p>
+                    <a href="mailto:robert.hafredal@jw.com">
+                      robert.hafredal@jw.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="arena-card">
+                <img src="/arena.jpg" alt="JW Sport Arena" />
+                <div className="card-content">
+                  <h3>JW Sport Arena</h3>
+                  <p>State-of-the-art training facility</p>
+                  <p>Professional equipment and coaching</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="contact-form-container">
+              <form
+                className="contact-form"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <div className="form-row">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div className="form-row">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+                <div className="form-row">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="How can we help?"
+                    required
+                  />
+                </div>
+                <div className="form-actions">
+                  <button type="submit" className="button">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
