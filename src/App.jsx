@@ -261,7 +261,7 @@ function App() {
             <p>JW Sport management</p>
             <p>+46 406 118 688</p>
             <p>CEO - Robert Hafredal</p>
-            <p>robert.hafredal@jw.com</p>
+            <p>info@jwsportmanagement.com</p>
           </div>
           <p className="footer-copy">© Copyright 2023. All Rights Reserved.</p>
         </div>

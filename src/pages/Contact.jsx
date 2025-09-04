@@ -1,4 +1,22 @@
 export default function Contact() {
+  const handleMailto = (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const name = form.elements.name?.value?.trim() || "";
+    const email = form.elements.email?.value?.trim() || "";
+    const message = form.elements.message?.value?.trim() || "";
+
+    const to = "info@jwsportmanagement.com";
+    const subject = encodeURIComponent(
+      `New contact from ${name || "Website User"}`
+    );
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\n— Sent via JW Sport Management website`
+    );
+
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <main className="contact-page">
       <section className="contact">
@@ -44,10 +62,7 @@ export default function Contact() {
             </div>
 
             <div className="contact-form-container">
-              <form
-                className="contact-form"
-                onSubmit={(e) => e.preventDefault()}
-              >
+              <form className="contact-form" onSubmit={handleMailto}>
                 <div className="form-row">
                   <label htmlFor="name">Name</label>
                   <input

@@ -378,3 +378,6 @@ address { color: var(--muted); font-style: normal; }
 /* Link reset for athlete cards */
 .athlete-card { text-decoration: none; color: inherit; }
 .athlete-card:hover { text-decoration: none; }
+
+.status-success { color: #0a7a33; margin-top: 8px; }
+.status-error { color: #b00020; margin-top: 8px; }

@@ -10,7 +10,7 @@ export default function About() {
             based in Malmö, Sweden.
           </p>
           <p>
-            The founders, Daniel Wessfeldt and Stina Funke has more than 30
+            The CEO, Robert Hafredal, together with the founding team has more than 20
             years experience in sports management.
           </p>
           <p>
