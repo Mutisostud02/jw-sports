@@ -15,7 +15,8 @@ function App() {
       <header className="site-header">
         <div className="container header-inner">
           <Link className="logo" to="/">
-            JW Sport management
+            <img src="/logo/android-chrome-192x192.png" alt="JW Sport Management Logo" className="logo-img" />
+            <span className="logo-text">JW Sport Management</span>
           </Link>
           <input
             id="nav-toggle"
