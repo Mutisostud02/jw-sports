@@ -8,14 +8,23 @@ import Athletes from "./pages/Athletes";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AthleteDetail from "./pages/AthleteDetail";
+import PerformanceMonitor from "./components/PerformanceMonitor";
 
 function App() {
   return (
     <>
+      <PerformanceMonitor />
       <header className="site-header">
         <div className="container header-inner">
           <Link className="logo" to="/">
-            <img src="/logo/android-chrome-192x192.png" alt="JW Sport Management Logo" className="logo-img" />
+            <img
+              src="/logo/android-chrome-192x192.png"
+              alt="JW Sport Management Logo"
+              className="logo-img"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
             <span className="logo-text">JW Sport Management</span>
           </Link>
           <input

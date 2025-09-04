@@ -450,3 +450,36 @@ address { color: var(--muted); font-style: normal; }
     height: 36px;
   }
 }
+
+/* Image optimization for better performance */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lazy loading for images */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Optimize hero images */
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+/* Reduce image quality for faster loading */
+.athlete-card img,
+.director-media img,
+.arena-media img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
