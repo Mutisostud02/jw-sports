@@ -44,8 +44,8 @@ export default function Contact() {
                     <a href="tel:+46406118688">+46 406 118 688</a>
                   </p>
                   <p>
-                    <a href="mailto:robert.hafredal@jw.com">
-                      robert.hafredal@jw.com
+                    <a href="mailto:info@jwsportmanagement.com">
+                      info@jwsportmanagement.com
                     </a>
                   </p>
                 </div>
